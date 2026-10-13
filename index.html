@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Club Membership</title>\
+    <style>
+h1{
+    text-align: center;
+    color:chocolate;
+}
+a{
+    background-color: #333;
+    padding: 14 16;
+    text-decoration: none;
+    color: wheat;
+    margin-right: 5px;
+}
+a:hover{
+    background-color:red ;
+}
+.topnav{
+    background-color: black;
+    height: 30px;
+}
+.card{
+    width: 400px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8x gray;
+    margin: auto;
+}
+h2{
+    color:green;
+
+}
+.badge{
+    background-color: red;
+    color:white;
+    padding: small;
+    border-radius: 10px;
+    position:absolute;
+    
+    
+}
+
+    </style>
+</head>
+
+
+<body>
+<div class="topnav">
+
+<a href="#">Home</a>
+<a href="#">Events</a>
+<a href="#">Join</a>
+
+
+</div>
+
+    <h1>Programming Club</h1>
+
+
+<div class="card">
+<h2>Club Membership</h2>
+<p>
+    <i>Join the Programming Club to take part in contests,workshops and weekly meetups</i>
+</p>
+<span class="badge">NEW</span>
+</div>
+
+<div class="form">
+<form action="/index.html" method="post">
+    <fieldset>
+        <legend>Join the club</legend>
+<label for="fname">Full name:</label>
+<input type="text" id="fname" name="fname" min="3" >
+<br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br>
+<label for="sid">Student ID:</label>
+<input type="text" placeholder="24-57425-2" id="sid" name="sid" required pattern="[0-9]{2}-[0-9]{5}-[0-9]">
+<br>
+<label for="age">Age</label>
+<input type="text" id="age" name="age">
+<br>
+<label for="membership">Membership Type:</label>
+<input type="radio" id="General" name="membership" value="General">
+<label for="General">General</label>
+<input type="radio" id="Executive" name="membership" value="Executive">
+<label for="Executive">Executive</label>
+<br>
+<label for="pclub">Preferred Club</label>
+<select name="pclub" id="pclub">
+    <option value="Select a club">Select a club</option>
+<option value="Programming">Programming</option>
+<option value="Robotics">Robotics</option>
+<option value="Debate">Debate</option>
+</select>
+<br>
+<label for="join">Why do you want to join?
+</label>
+<br>
+<textarea name="why">
+
+</textarea>
+<br>
+<input type="checkbox" name="agree" id="agree">
+<label for="agree">I agree to the club rules</label>
+<br><br><br>
+<input type="submit" value="Join Now">
+
+
+    </fieldset>
+
+
+
+</form>
+
+</div>
+
+
+
+
+</body>
+</html>
